@@ -10,7 +10,7 @@
 ## makeCacheMatrix function creats a "matrix" which contatins a list of functions:
 ## set, get, setinverse, getinverse
 
-makeCacheMatrix <- function(x = matrix(dd)) {
+makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
     x <<- y
@@ -43,3 +43,4 @@ cacheSolve <- function(x, ...) {
   x$setinverse(m)
   m
 }
+
